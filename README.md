@@ -12,9 +12,7 @@ The file includes 3 helper classes that extend Sklearn estimators and transforme
 
 2: ModelSearch.py
 File contains all the parameters and gridsearches used to generate the data for the report. Uses pipelines made up of the classes from HelperModule.py.
-File takes a very long time (~10 hours on my machine) to run as there are many expensive grid searches being run. Unfortunately, the script was run before the announcement
-to post cached results and I did not save the results at the time. To get the best model for each gridsearch I looked through the cv_results_["mean_test_score"] and found
-the best score for each model.
+File takes a very long time (~10 hours on my machine) to run as there are many expensive grid searches being run. To get the best model for each gridsearch I looked through the cv_results_["mean_test_score"] and found the best score for each model.
 
 3: BestModel.py
 File that has the best pipeline version of each model found by ModelSearch.py. File fits models to training data then generates prediction results on the independent test set
